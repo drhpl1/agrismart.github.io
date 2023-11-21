@@ -1,0 +1,169 @@
+<!-- Halaman Artikel (informasi-penanaman.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Produksi - AgriSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #e3dbd4;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        
+        .navbar {
+            background-color: #978775;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a,
+        .logo {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .menu-icon {
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 800px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 20px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+        .container h1 {
+            text-align: justify;
+            font-size: 140%;
+        }
+
+        .container p {
+            text-align: justify;
+            font-size: 1rem; /* Menggunakan ukuran teks dalam satuan rem */
+        }
+                
+        .content {
+            text-align: justify;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .menu a {
+            font-size: 16px;
+        }
+
+        .foto_penanaman {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 600px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 15px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/images/orbit_1.png"> AgriSmart
+            </div>
+            <div class="menu">
+                <a href="{{ url_for('homebase') }}" >Halaman Utama</a>
+                <a href="{{ url_for('informasi') }}">Informasi</a>
+                <a href="{{ url_for('aplikasi') }}">Aplikasi</a>
+                <a href="{{ url_for('anggotakel') }}">Anggota Kelompok</a>
+            </div>
+        </div>
+
+
+    <!-- Konten Informasi Produksi -->
+    <div class="content">
+        <h1> Informasi Terkait Luas Tanah, Curah Hujan, Suhu, Kelembaban </h1>
+        <img class="foto_penanaman" src="../static/images/produksi.jpg" alt="Produksi">
+        <br>
+         <!-- Isi Artikel -->
+         <p>Padi adalah tanaman yang sangat penting dalam pertanian dan sebagai sumber makanan pokok 
+            bagi sebagian besar penduduk dunia, terutama di Asia.
+        <br><br>
+            Produksi padi biasanya melibatkan berbagai tahap, mulai dari penanaman bibit, perawatan sawah, 
+            hingga panen dan penggilingan beras. Padi bisa ditanam dalam berbagai musim tanam sepanjang tahun 
+            tergantung pada wilayah geografisnya. Untuk menghasilkan padi yang bagus atau berkualitas, Petani 
+            juga membutuhkan informasi mengenai luas tanah, curah hujan, suhu, dan kelembaban untuk pertanian 
+            padi agar dapat bervariasi berdasarkan lokasi geografis dan musim. Berikut adalah beberapa informasi 
+            umum yang bisa berguna dalam pertanian padi : 
+        </p>
+        <br>
+
+         <!-- Langkah-langkah Produksi -->
+        <ol>
+            <li><b>Luas Tanah</b></li>
+            <p>Luas tanah yang diperlukan untuk pertanian padi akan bervariasi tergantung pada jenis padi 
+               yang ditanam, metode budidaya, dan kebutuhan lokal. Beberapa varietas padi memerlukan 
+               lebih banyak ruang daripada yang lain. Petani biasanya mengukur lahan mereka dalam hektar 
+               (ha) atau are.</p>
+                <br>
+            <li><b>Curah Hujan</b></li>
+            <p>Curah hujan yang diperlukan untuk pertanian padi juga bervariasi, tetapi padi biasanya 
+               memerlukan banyak air. Curah hujan yang ideal untuk padi berkisar antara 1.000 hingga 3.000 
+               mm per tahun, tergantung pada jenis padi, musim tanam, dan lokasi geografis.</p>
+                <br>
+            <li><b>Suhu</b></li>
+            <p>Suhu juga merupakan faktor penting dalam pertanian padi. Padi tumbuh dengan baik dalam 
+               suhu berkisar antara 20°C hingga 35°C. Namun, suhu ideal dapat bervariasi sesuai dengan jenis 
+               padi yang ditanam. Padi biasanya memerlukan suhu yang hangat selama fase pertumbuhan dan 
+               berbunga.</p>
+                <br>
+            <li><b>Kelembaban</b></li>
+            <p>Kelembaban adalah faktor kunci dalam pertanian padi. Padi memerlukan tanah yang lembab 
+               dan biasanya ditanam di daerah yang memiliki kelembaban yang cukup. Sistem irigasi sering 
+               digunakan untuk memastikan pasokan air yang cukup, terutama dalam daerah dengan curah 
+               hujan yang tidak cukup.</p>
+        </ol>
+    </div>
+</body>
+</html>

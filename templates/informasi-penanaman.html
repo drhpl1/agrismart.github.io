@@ -1,0 +1,175 @@
+<!-- Halaman Artikel (informasi-penanaman.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Penanaman - AgriSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #e3dbd4;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        
+        .navbar {
+            background-color: #978775;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a,
+        .logo {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .menu-icon {
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 800px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 20px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+        .container h1 {
+            text-align: justify;
+            font-size: 140%;
+        }
+
+        .container p {
+            text-align: justify;
+            font-size: 1rem; /* Menggunakan ukuran teks dalam satuan rem */
+        }
+        
+        .content {
+            text-align: justify;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        
+        .menu a {
+            font-size: 16px;
+        }
+
+        .foto_penanaman {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 600px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 15px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/images/orbit_1.png"> AgriSmart
+            </div>
+            <div class="menu">
+                <a href="{{ url_for('homebase') }}" >Halaman Utama</a>
+                <a href="{{ url_for('informasi') }}">Informasi</a>
+                <a href="{{ url_for('aplikasi') }}">Aplikasi</a>
+                <a href="{{ url_for('anggotakel') }}">Anggota Kelompok</a>
+            </div>
+        </div>
+
+
+    <!-- Konten Informasi Penanaman Padi -->
+    <div class="content">
+        <h1> Menanam Padi yang Baik dan Efektif: Panduan Langkah demi Langkah </h1>
+        <img class="foto_penanaman" src="../static/images/penanaman.jpg" alt="Penanaman">
+        <br>
+         <!-- Isi Artikel -->
+         <p>Padi adalah tanaman pangan pokok yang sangat penting di seluruh dunia, yang memberikan 
+            makanan bagi jutaan orang. Menanam padi yang baik dan efektif adalah kunci untuk mendapatkan 
+            hasil panen yang maksimal. Dalam artikel ini, kami akan membahas langkah-langkah penting untuk 
+            menanam padi dengan sukses.</p>
+
+         <!-- Langkah-langkah penanaman padi -->
+         <br>
+         <ol>
+             <li><b>Pemilihan Varietas Padi yang Tepat</b></li>
+                <p>Pemilihan varietas padi yang sesuai dengan iklim dan kondisi tanah setempat sangat penting. Berbicaralah dengan pakar pertanian setempat atau lembaga pertanian yang dapat memberikan rekomendasi varietas yang paling cocok untuk wilayah Anda.</p>
+             <br>
+             <li><b>Persiapan Lahan yang Baik</b></li>
+                <p><b>Pemupukan: </b>Lakukan analisis tanah dan lakukan pemupukan berdasarkan hasil analisis tersebut. Pastikan tanah memiliki nutrisi yang cukup untuk mendukung pertumbuhan padi.</p>
+                <p><b>Pembajakan: </b>Persiapan lahan dengan pembajakan atau pemotongan tanaman sebelumnya yang tumbuh di lahan adalah langkah penting untuk memastikan akar padi dapat meresap dengan baik.</p>
+             <br>
+             <li><b>Penanaman Benih dengan Benar</b></li>
+                <p><b>Jarak dan kedalaman:</b> Tanam benih padi dengan jarak yang sesuai dan pada kedalaman yang tepat. Ini akan memengaruhi kerapatan tanaman dan pertumbuhan yang merata.</p>
+                <p><b>Metode penanaman:</b> Anda dapat menggunakan metode penanaman secara langsung atau transplanting. Metode transplanting umumnya menghasilkan hasil yang lebih baik karena tanaman yang lebih kuat dapat dipilih untuk dipindahkan.</p>
+             <br>
+             <li><b>Pengelolaan Air yang Tepat</b></li>
+                <p><b>Irigasi:</b> Pastikan tanah memiliki pasokan air yang cukup. Padi memerlukan air yang cukup, terutama selama fase pertumbuhan vegetatifnya. Sistem irigasi yang efisien seperti irigasi tetes atau irigasi banjir dapat digunakan, tergantung pada kondisi setempat.</p>
+                <p><b>Pengendalian air:</b> Penting untuk memantau ketinggian air dalam sawah. Gunakan saluran air atau pengairan berbasis teknologi yang dapat mengatur ketinggian air dengan tepat sesuai dengan kebutuhan tanaman padi.</p>
+             <br>
+             <li><b>Pemeliharaan Tanaman yang Baik</b></li>
+                <p><b>Pemangkasan:</b> Pemangkasan daun padi yang rusak atau berlebihan dapat membantu tanaman menggunakan sumber daya dengan lebih efisien dan mencegah penyakit.</p>
+                <p><b>Pengendalian Hama dan Penyakit:</b> Monitor tanaman untuk tanda-tanda hama atau penyakit dan segera lakukan tindakan pencegahan atau pengendalian yang sesuai jika diperlukan.</p>
+             <br>
+             <li><b>Pemupukan Lanjutan</b></li>
+                <p>Selama pertumbuhan tanaman, tambahan pemupukan dapat diperlukan. Ini dapat dilakukan dengan pemupukan daun atau pemupukan berbasis teknologi yang mengukur kebutuhan tanaman secara tepat.</p>
+             <br>
+             <li><b>Pemanenan dan Pengeringan</b></li>
+                <p>Pemanenan padi sebaiknya dilakukan saat tanaman sudah mencapai tingkat kematangan yang sesuai. Padi yang sudah panen kemudian perlu dikeringkan secara merata sebelum disimpan atau dijual.</p>
+             <br>
+             <li><b>Penyimpanan dan Pengelolaan Hasil Panen</b></li>
+                <p>Pastikan hasil panen disimpan dalam kondisi yang baik untuk mencegah kerusakan dan kehilangan. Gunakan metode penyimpanan yang sesuai seperti gudang penyimpanan yang bersih dan kering.</p>
+             <!-- Tambahkan langkah-langkah lain di sini sesuai kebutuhan -->
+         </ol>
+ 
+         <br><br>
+         <!-- Paragraf kesimpulan -->
+         <h1><b>Kesimpulan: Pertanian Padi yang Sukses Memerlukan Perhatian pada Detail. </b></h1>
+         <p>Menanam padi yang baik dan efektif memerlukan perhatian pada detail dan pemahaman mendalam tentang kebutuhan tanaman padi. Dengan mengikuti panduan langkah demi langkah ini, petani dapat meningkatkan produktivitas dan hasil panen padi mereka, yang pada gilirannya akan membantu mendukung keamanan pangan dan kesejahteraan masyarakat setempat. Pertanian padi yang sukses adalah kontribusi penting dalam usaha global untuk memenuhi kebutuhan pangan dunia.</p>
+     </div>
+</body>
+</html>
+	

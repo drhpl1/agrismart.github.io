@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url('../static/images/background_foto.png');
+            height: 100vh;
+            background-size: 100% auto;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        
+        .navbar {
+            background-color: #978775;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a,
+        .logo {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .menu-icon {
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container h1 {
+        font-size: 36px; /* Ubah ukuran font h1 */
+        color: #978775; /* Ubah warna teks h1 menjadi putih */
+        text-align: center; /* Pusatkan teks h1 */
+        margin-bottom: 100; /* Beri jarak bawah sebesar 20px */
+        font-family: Arial, sans-serif;
+        position: relative;
+        font-size: 70px;
+        }
+        
+        .masuk-button {
+            margin-top: 10%;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 20px;
+            margin-left: 20px;
+            margin-right: 80%;
+            font-size: 15px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #978775;
+            border: none;
+            box-shadow: 0 9px #999;
+        }
+        
+        .menu a {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../static/images/orbit_1.png"> AgriSmart
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('homebase') }}">Halaman Utama</a>
+            <a href="{{ url_for('informasi') }}">Informasi</a>
+            <a href="{{ url_for('aplikasi') }}">Aplikasi</a>
+            <a href="{{ url_for('anggotakel') }}">Anggota Kelompok</a>
+        </div>
+    </div>
+    <div class="container">
+            <h1>Selamat Datang Di Aplikasi AgriSmart</h1>
+        <a class="masuk-button" href="{{ url_for('aplikasi') }}" style="text-decoration:none">Mulai</a>
+    </div>
+</body>
+
+</html>

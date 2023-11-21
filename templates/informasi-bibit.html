@@ -1,0 +1,227 @@
+<!-- Halaman Artikel (informasi-penanaman.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Bibit - AgriSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            /* background-image: url('../static/images/istockphoto-621730722-612x612_1.png'); */
+            background-color: #e3dbd4;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        
+        .navbar {
+            background-color: #978775;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a,
+        .logo {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .menu-icon {
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 800px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 20px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+        .container h1 {
+            text-align: justify;
+            font-size: 140%;
+        }
+
+        .container p {
+            text-align: justify;
+            font-size: 1rem; /* Menggunakan ukuran teks dalam satuan rem */
+        }
+
+        .content {
+            text-align: justify;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        
+        .menu a {
+            font-size: 16px;
+        }
+
+        .foto_penanaman {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-size: 1rem;
+            max-width: 600px; /* Atur lebar maksimum sesuai preferensi Anda */
+            margin: 0 auto; /* Untuk membuat .container berada di tengah secara horizontal */
+            padding: 15px; /* Padding opsional untuk memberi ruang di sekitar konten */
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/images/orbit_1.png"> AgriSmart
+            </div>
+            <div class="menu">
+                <a href="{{ url_for('homebase') }}" >Halaman Utama</a>
+                <a href="{{ url_for('informasi') }}">Informasi</a>
+                <a href="{{ url_for('aplikasi') }}">Aplikasi</a>
+                <a href="{{ url_for('anggotakel') }}">Anggota Kelompok</a>
+            </div>
+        </div>
+
+
+    <!-- Konten Informasi Bibit Unggul -->
+    <div class="content">
+        <h1> KARAKTERISTIK DAN JENIS BIBIT PADI YANG UNGGUL </h1>
+        <img class="foto_penanaman" src="../static/images/bibit_padi.jpg" alt="Bibit Padi">
+        <br>
+         <!-- Isi Artikel -->
+         <p>Bibit padi unggul adalah jenis-jenis bibit padi yang telah melalui seleksi dan pengembangan genetik 
+            untuk menghasilkan sifat-sifat unggul. Bibit-bibit ini memiliki karakteristik tertentu yang membuatnya 
+            lebih produktif, tahan terhadap hama dan penyakit, serta mampu bertahan dalam berbagai kondisi 
+            lingkungan.
+        <br><br>
+        Berikut adalah beberapa karakteristik bibit padi unggul:
+        </p>
+        <br>
+
+         <!-- Langkah-langkah Bibit Unggul -->
+         <ul>
+             <li>Produktivitas Tinggi: Bibit padi unggul memiliki potensi hasil panen yang lebih tinggi 
+                dibandingkan dengan varietas padi biasa. Mereka telah dirancang untuk menghasilkan jumlah 
+                gabah yang optimal per hektar.
+             </li>
+                <br>
+             <li>Ketahanan Terhadap Hama dan Penyakit: Varietas unggul umumnya memiliki ketahanan 
+                terhadap serangan hama seperti kutu, wereng, dan penyakit seperti blast atau hawar daun, 
+                yang dapat merusak hasil panen.</b>
+             </li>
+                <br>
+             <li>Ketahanan Terhadap Kekeringan atau Banjir: Beberapa bibit padi unggul telah dikembangkan 
+                untuk memiliki ketahanan terhadap kondisi kekeringan atau banjir. Mereka memiliki akar 
+                yang kuat atau sifat tahan air yang membuatnya dapat bertahan dalam kondisi lingkungan 
+                yang sulit.
+             </li>
+                <br>
+             <li>Waktu Tanam yang Fleksibel: Bibit padi unggul sering kali memiliki masa tanam yang lebih 
+                pendek, memungkinkan petani untuk memanen lebih awal dan mempercepat siklus tanam-panen.
+             </li>
+                <br>
+             <li>Kualitas Butir yang Baik: Selain kuantitas, bibit padi unggul juga dapat memiliki kualitas butir 
+                yang baik, seperti ukuran butir yang seragam, warna gabah yang bersih, dan keberlimpahan 
+                pati yang menghasilkan beras berkualitas tinggi.
+             </li>
+                <br>
+             <li>Adaptasi Lingkungan yang Baik: Bibit padi unggul dapat tumbuh dengan baik di berbagai jenis 
+                tanah dan kondisi iklim. Mereka dapat diadaptasi dengan baik di berbagai wilayah geografis.
+             </li>
+         </ol>
+ 
+         <br>
+         <p>Penting untuk mencatat bahwa penggunaan bibit padi unggul ini membantu meningkatkan 
+            produktivitas pertanian padi dan kontribusi terhadap ketahanan pangan global. Program penelitian
+            dan pengembangan terus berlangsung untuk menciptakan varietas-varietas padi unggul yang lebih 
+            baik yang dapat memenuhi tuntutan pertanian modern dan menghadapi tantangan perubahan iklim.
+        <br><br>
+        Selain itu, terdapat banyak jenis bibit padi yang unggul yang telah dikembangkan oleh para peneliti 
+        pertanian. Beberapa jenis bibit padi unggul yang dikenal termasuk : 
+        </p>
+        <br>
+
+        <ol>
+            <li><b>IR Varietas (International Rice Varieties)</b></li>
+            <p>Varietas padi ini dikembangkan oleh International Rice Research Institute (IRRI) dan memiliki 
+                ketahanan terhadap berbagai jenis hama, penyakit, dan kondisi cuaca ekstrem.</p>
+                <br>
+            <li><b>Varietas Hibrida</b></li>
+            <p>Bibit padi hibrida dihasilkan dari persilangan dua varietas padi yang berbeda untuk menghasilkan 
+                keturunan dengan sifat-sifat unggul seperti hasil panen yang tinggi, ketahanan terhadap penyakit, dan 
+                ketahanan terhadap kekeringan.</p>
+                <br>
+            <li><b>Varietas Padi Organik</b></li>
+            <p>Varietas padi organik dikembangkan tanpa menggunakan pupuk atau pestisida kimia. Mereka 
+                biasanya ditanam dengan menggunakan pupuk organik dan teknik pengendalian hama alami.</p>
+                <br>
+            <li><b>Varietas Padi Tahan Kekeringan</b></li>
+            <p>Varietas ini memiliki kemampuan untuk tumbuh dengan baik dalam kondisi kekeringan. Mereka 
+                biasanya memiliki sistem perakaran yang dalam dan efisien dalam penggunaan air.</p>
+                <br>
+            <li><b>Varietas Padi Tahan Banjir</b></li>
+            <p>Varietas padi ini dirancang untuk tumbuh dengan baik dalam kondisi banjir. Mereka memiliki 
+                kemampuan untuk bertahan hidup dalam air yang cukup lama.</p>
+                <br>
+            <li><b>Varietas Padi Aromatik</b></li>
+            <p>Varietas ini dikenal karena memiliki aroma yang khas. Contohnya adalah "Basmati" yang berasal dari 
+                India dan Pakistan.</p>
+                <br>
+            <li><b>Varietas Padi Pulen (Waxy Rice Varieties)</b></li>
+            <p>Varietas ini memiliki sifat butiran yang lengket dan sering digunakan untuk produk-produk makanan 
+                tradisional seperti kue dan kue klepon.</p>
+                <br>
+            <li><b>Varietas Padi Lokal</b></li>
+            <p>Varietas padi lokal yang telah diadaptasi dan ditanam oleh masyarakat lokal di berbagai wilayah. 
+                Varietas ini biasanya telah beradaptasi dengan baik dengan lingkungan setempat.</p>
+        </ol>
+
+        <br>
+        <p>Setiap jenis bibit padi unggul memiliki karakteristik dan keunggulan tersendiri, dan pemilihan jenis 
+            bibit harus disesuaikan dengan kondisi lingkungan, iklim, dan kebutuhan petani setempat. Program 
+            penelitian pertanian terus mengembangkan varietas baru dengan sifat-sifat yang lebih unggul untuk 
+            meningkatkan hasil panen dan keberlanjutan pertanian padi.
+        </p>
+    </div>
+</body>
+</html>
+	
